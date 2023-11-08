@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Каталог</title>
+        <link rel="icon" href="/CourseProject/main/images/logo.png" type="image/x-icon">
+        <script src="vendor/js/jquery-3.3.1.slim.min.js" defer></script>
+        <script src="vendor/js/popper.min.js" async></script>
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+        <script src="vendor/js/bootstrap.min.js" defer></script>
+        <link rel="stylesheet" href="/CourseProject/main/style.css">
+        <script src="/CourseProject/main/script.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <div class = "logo_img">
+                    <img src="images/logo.png" alt="Лого">
+                </div>
+                <div class = "company_name">
+                    <a href="/CourseProject/main/index.html" class="link" style="color:green">Аптека АПТЕК</a>
+                </div>
+            </div>
+            <form>
+                <input type="text" name="text" class="search_field" placeholder = "Поиск лекарств по названию">
+                <input type="submit" name="submit" class="submit" value="Поиск">
+            </form>
+            <div class = "right_header">
+                <div class="catalog">
+                    <a href="/CourseProject/main/index.html" class="catalog_link" style="color:black">Каталог</a>
+                </div>
+                <div class="user_icon">
+                    <img src="images/user_icon.png" alt="">    
+                </div>
+                <div class="authorization_field">
+                    <a href="/CourseProject/authorization/authorization.html" class="link_login" style="color:black">Войти</a>
+                </div>
+                <div class="basket_icon">
+                    <img src="images/basket.png" alt="">
+                </div>
+                <div class="basket">
+                    <a href="link" class="link_basket" style="color:black">Корзина</a>
+                </div>
+            </div>
+        </header>
+        <div class = "main">
+            <div class="filter">
+                <div class="f_button">
+                    <input type="submit" name="submit" class="filter_button" value="Фильтр" >
+                </div>
+                <div class="filter_block">
+                    <div class="filter_title">Фильтр</div>
+                    <div class="drop_down_source">
+                        <div class="source">
+                            Изготовитель
+                        </div>
+                        <form>
+                            <select id="company" name="company">
+                              <option value="Paradise">Paradise</option>
+                              <option value="GoodPharmacy">GoodPharmacy</option>
+                              <option value="Сумамед">Сумамед</option>
+                              <option value="">...</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="checkbox_recipe">
+                        <input type="checkbox" class="recipe" value="Без рецепта">  Без рецепта
+                    </div>
+                    <div class="price_range">
+                        <div class="price">
+                            Цена
+                        </div>
+                        <div class="range">
+                            <div class="range_min">
+                                0
+                            </div>
+                            <div class="range_max">
+                                max
+                            </div>
+                        </div>
+                        <div class="range_button">
+                            <div class="range_up">
+                                <input type="range" class = "range_button_up">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last_filter_buttons">
+                        <input type="reset"  name="reset" class="reset_filter" value="Сбросить" >
+                        <input type="submit" name="submit" class="submit_filter" value="Применить">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="items">
+                    <a href="link">
+                        <div class="item">
+                            <div class = "basket_item_icon">
+                                <img src="images/basket_item.png" alt="">
+                            </div>
+                            <div class="information_field">                            
+                                <div class="item_image">
+                                    <img src="images/бальзам1.jpg" alt="Упс">
+                                </div>
+                                <div class="item_name">
+                                    Бальзам болотва
+                                </div>
+                                <div class="item_price">
+                                    208.43 руб.
+                                </div>   
+                            </div>
+                            <div class="views">
+                                <div class="rate">
+                                    <div class="rate_icon">
+                                        <img src="images/rate.png" alt="Упс">
+                                    </div>
+                                    <div class="rate_count">
+                                        4
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="rev_count">
+                                        2 отзыва
+                                    </div>
+                                    <div class="review_icon">
+                                        <img src="images/review.png" alt="Упс">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </a>
+                    <a href="link">
+                        <div class="item">
+                            
+                            <div class = "basket_item_icon">
+                                <img src="images/basket_item.png" alt="Упс">
+                            </div>
+                            <div class="information_field">                            
+                                <div class="item_image">
+                                    <img src="images/витамин1.jpg" alt="Упс">
+                                </div>
+                                <div class="item_name">
+                                    Витамины Форте
+                                </div>
+                                <div class="item_price">
+                                    43.12 руб.
+                                </div>   
+                            </div>
+                            <div class="views">
+                                <div class="rate">
+                                    <div class="rate_icon">
+                                        <img src="images/rate.png" alt="Упс">
+                                    </div>
+                                    <div class="rate_count">
+                                        3.5
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="rev_count">
+                                        21 отзыв
+                                    </div>
+                                    <div class="review_icon">
+                                        <img src="images/review.png" alt="Упс">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </a>
+                    <a href="link">
+                        <div class="item">
+                            <div class = "basket_item_icon">
+                                <img src="images/basket_item.png" alt="">
+                            </div>
+                            <div class="information_field">                            
+                                <div class="item_image">
+                                    <img src="images/витамин2.jpg" alt="Упс">
+                                </div>
+                                <div class="item_name">
+                                    Active Man
+                                </div>
+                                <div class="item_price">
+                                    60.41 руб.
+                                </div>   
+                            </div>
+                            <div class="views">
+                                <div class="rate">
+                                    <div class="rate_icon">
+                                        <img src="images/rate.png" alt="Упс">
+                                    </div>
+                                    <div class="rate_count">
+                                        4.8
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="rev_count">
+                                        9 отзывов
+                                    </div>
+                                    <div class="review_icon">
+                                        <img src="images/review.png" alt="Упс">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </a>
+                    <a href="link">
+                        <div class="item">
+                            <div class = "basket_item_icon">
+                                <img src="images/basket_item.png" alt="">
+                            </div>
+                            <div class="information_field">                            
+                                <div class="item_image">
+                                    <img src="images/витамин2.jpg" alt="Упс">
+                                </div>
+                                <div class="item_name">
+                                    Витамин Д<sub>3</sub>
+                                </div>
+                                <div class="item_price">
+                                    22.74 руб.
+                                </div>   
+                            </div>
+                            <div class="views">
+                                <div class="rate">
+                                    <div class="rate_icon">
+                                        <img src="images/rate.png" alt="Упс">
+                                    </div>
+                                    <div class="rate_count">
+                                        4.1
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="rev_count">
+                                        7 отзывов
+                                    </div>
+                                    <div class="review_icon">
+                                        <img src="images/review.png" alt="Упс">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </a>  
+                    <a href="link">
+                        <div class="item">
+                            <div class = "basket_item_icon">
+                                <img src="images/basket_item.png" alt="">
+                            </div>
+                            <div class="information_field">                            
+                                <div class="item_image">
+                                    <img src="images/таблетки1.jpg" alt="Упс">
+                                </div>
+                                <div class="item_name">
+                                    PlaPlamela
+                                </div>
+                                <div class="item_price">
+                                    29.48 руб.
+                                </div>   
+                            </div>
+                            <div class="views">
+                                <div class="rate">
+                                    <div class="rate_icon">
+                                        <img src="images/rate.png" alt="Упс">
+                                    </div>
+                                    <div class="rate_count">
+                                        3.7
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="rev_count">
+                                        4 отзыва
+                                    </div>
+                                    <div class="review_icon">
+                                        <img src="images/review.png" alt="Упс">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </a>  
+                    <a href="link">
+                        <div class="item">
+                            <div class = "basket_item_icon">
+                                <img src="images/basket_item.png" alt="">
+                            </div>
+                            <div class="information_field">                            
+                                <div class="item_image">
+                                    <img src="images/таблетки2.jpg" alt="Упс">
+                                </div>
+                                <div class="item_name">
+                                    BIOTIN&RESVERATROL
+                                </div>
+                                <div class="item_price">
+                                    70.00 руб.
+                                </div>   
+                            </div>
+                            <div class="views">
+                                <div class="rate">
+                                    <div class="rate_icon">
+                                        <img src="images/rate.png" alt="Упс">
+                                    </div>
+                                    <div class="rate_count">
+                                        5
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="rev_count">
+                                        12 отзывов
+                                    </div>
+                                    <div class="review_icon">
+                                        <img src="images/review.png" alt="Упс">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </a> 
+                    <a href="link">
+                        <div class="item">
+                            <div class = "basket_item_icon">
+                                <img src="images/basket_item.png" alt="">
+                            </div>
+                            <div class="information_field">                            
+                                <div class="item_image">
+                                    <img src="images/бальзам1.jpg" alt="Упс">
+                                </div>
+                                <div class="item_name">
+                                    Бальзам болотва
+                                </div>
+                                <div class="item_price">
+                                    208.43 руб.
+                                </div>   
+                            </div>
+                            <div class="views">
+                                <div class="rate">
+                                    <div class="rate_icon">
+                                        <img src="images/rate.png" alt="Упс">
+                                    </div>
+                                    <div class="rate_count">
+                                        4
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="rev_count">
+                                        2 отзыва
+                                    </div>
+                                    <div class="review_icon">
+                                        <img src="images/review.png" alt="Упс">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </a>
+                    <a href="link">
+                        <div class="item">
+                            <div class = "basket_item_icon">
+                                <img src="images/basket_item.png" alt="">
+                            </div>
+                            <div class="information_field">                            
+                                <div class="item_image">
+                                    <img src="images/витамин1.jpg" alt="Упс">
+                                </div>
+                                <div class="item_name">
+                                    Витамины Форте
+                                </div>
+                                <div class="item_price">
+                                    43.12 руб.
+                                </div>   
+                            </div>
+                            <div class="views">
+                                <div class="rate">
+                                    <div class="rate_icon">
+                                        <img src="images/rate.png" alt="Упс">
+                                    </div>
+                                    <div class="rate_count">
+                                        3.5
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="rev_count">
+                                        21 отзыв
+                                    </div>
+                                    <div class="review_icon">
+                                        <img src="images/review.png" alt="Упс">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </a>
+                    <a href="link">
+                        <div class="item">
+                            <div class = "basket_item_icon">
+                                <img src="images/basket_item.png" alt="">
+                            </div>
+                            <div class="information_field">                            
+                                <div class="item_image">
+                                    <img src="images/витамин2.jpg" alt="Упс">
+                                </div>
+                                <div class="item_name">
+                                    Active Man
+                                </div>
+                                <div class="item_price">
+                                    60.41 руб.
+                                </div>   
+                            </div>
+                            <div class="views">
+                                <div class="rate">
+                                    <div class="rate_icon">
+                                        <img src="images/rate.png" alt="Упс">
+                                    </div>
+                                    <div class="rate_count">
+                                        4.8
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="rev_count">
+                                        9 отзывов
+                                    </div>
+                                    <div class="review_icon">
+                                        <img src="images/review.png" alt="Упс">
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </a> 
+                </div>
+               
+                <!-- <div class="add1">
+                    <img src="images/add_wildberries.gif" alt="Реклама">
+                </div> 
+                <div class="add2">
+                    <img src="images/add_mtc.gif" alt="Реклама">
+                </div>      -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="https://fito.by/product-category/new/">1</a></li>
+                      <li class="page-item"><a class="page-link" href="https://fito.by/product-category/new/">2</a></li>
+                      <li class="page-item"><a class="page-link" href="https://fito.by/product-category/new/">3</a></li>
+                      <li class="page-item"><a class="page-link" href="https://fito.by/product-category/new/">Next</a></li>
+                    </ul>
+                </nav>             
+            </div>
+        </div>
+        <footer>
+            подвал
+        </footer>
+    </body>
+</html>

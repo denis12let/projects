@@ -1,0 +1,39 @@
+h2.q{background: #ebac0c;}
+
+
+.display{
+    color: green;
+    width: 20px;
+    padding: 12px;
+    margin: 12px;
+    border-color: black;
+    border: 10px;
+    position: absolute;
+    bottom: 200px;
+}
+
+#vk{
+    position: fixed;
+    color: red;
+}
+
+.float>img{
+   float: right; 
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.group{
+    display: flex;
+    width: 900px;
+    background-color: #ebac0c;
+}
+.item{
+    background-color: aqua;
+    width: 200px;
+    margin-right: 30px;
+}
