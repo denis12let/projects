@@ -7,6 +7,7 @@
       href="/CourseProject/main/images/logo.png"
       type="image/x-icon"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="vendor/js/jquery-3.3.1.slim.min.js" defer></script>
     <script src="vendor/js/popper.min.js" async></script>
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
@@ -30,15 +31,6 @@
             >
           </div>
         </div>
-        <form>
-          <input
-            type="text"
-            name="text"
-            class="search_field"
-            placeholder="Поиск лекарств по названию"
-          />
-          <input type="submit" name="submit" class="submit" value="Поиск" />
-        </form>
         <div class="right_header">
           <div class="catalog">
             <a
@@ -68,363 +60,52 @@
         </div>
       </div>
     </header>
-    <div class="main">
-      <div class="main__container">
-        <div class="filter">
-          <div class="f_button">
-            <input
-              type="submit"
-              name="submit"
-              class="filter_button"
-              value="Фильтр"
-            />
-          </div>
-          <div class="filter_block">
-            <div class="filter_title">Фильтр</div>
-            <div class="drop_down_source">
-              <div class="source">Изготовитель</div>
-              <form>
-                <select id="company" name="company">
-                  <option value="Paradise">Paradise</option>
-                  <option value="GoodPharmacy">GoodPharmacy</option>
-                  <option value="Сумамед">Сумамед</option>
-                  <option value="">...</option>
-                </select>
-              </form>
-            </div>
-            <div class="checkbox_recipe">
-              <input type="checkbox" class="recipe" value="Без рецепта" /> Без
-              рецепта
-            </div>
-            <div class="price_range">
-              <div class="price">Цена</div>
-              <div class="range">
-                <div class="range_min">0</div>
-                <div class="range_max">max</div>
+    <div class="cart">
+      <div class="cart__container">   
+        <h3 class="cart__title">Корзина</h3>
+        <div class="cart__items">
+          <div class="cart__item">
+            <div class="item-cart">
+              <div class="item-cart__image">
+                <img src="images/бальзам1.jpg" alt="">
               </div>
-              <div class="range_button">
-                <div class="range_up">
-                  <input type="range" class="range_button_up" />
-                </div>
+              <div class="item-cart__content">
+                <h4 class="item-cart__title">Cegth njdfh</h4>
+                <p class="item-cart__descr">Super opicanyasdasjkd asnkd samd asdsadasd</p>
               </div>
-            </div>
-            <div class="last_filter_buttons">
-              <input
-                type="reset"
-                name="reset"
-                class="reset_filter"
-                value="Сбросить"
-              />
-              <input
-                type="submit"
-                name="submit"
-                class="submit_filter"
-                value="Применить"
-              />
+              <div class="item-cart__counter">
+                <input type="number">
+              </div>
+              <div class="item-cart__price">
+                1999
+              </div>
+              <button class="item-cart__delete">
+                x
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="content">
-          <div class="items">
-            <a href="link">
-              <div class="item">
-                <div class="basket_item_icon">
-                  <img src="images/basket_item.png" alt="" />
-                </div>
-                <div class="information_field">
-                  <div class="item_image">
-                    <img src="images/бальзам1.jpg" alt="Упс" />
-                  </div>
-                  <div class="item_name">Бальзам болотва</div>
-                  <div class="item_price">208.43 руб.</div>
-                </div>
-                <div class="views">
-                  <div class="rate">
-                    <div class="rate_icon">
-                      <img src="images/rate.png" alt="Упс" />
-                    </div>
-                    <div class="rate_count">4</div>
-                  </div>
-                  <div class="review">
-                    <div class="rev_count">2 отзыва</div>
-                    <div class="review_icon">
-                      <img src="images/review.png" alt="Упс" />
-                    </div>
-                  </div>
-                </div>
+          <div class="cart__item">
+            <div class="item-cart">
+              <div class="item-cart__image">
+                <img src="images/бальзам1.jpg" alt="">
               </div>
-            </a>
-            <a href="link">
-              <div class="item">
-                <div class="basket_item_icon">
-                  <img src="images/basket_item.png" alt="Упс" />
-                </div>
-                <div class="information_field">
-                  <div class="item_image">
-                    <img src="images/витамин1.jpg" alt="Упс" />
-                  </div>
-                  <div class="item_name">Витамины Форте</div>
-                  <div class="item_price">43.12 руб.</div>
-                </div>
-                <div class="views">
-                  <div class="rate">
-                    <div class="rate_icon">
-                      <img src="images/rate.png" alt="Упс" />
-                    </div>
-                    <div class="rate_count">3.5</div>
-                  </div>
-                  <div class="review">
-                    <div class="rev_count">21 отзыв</div>
-                    <div class="review_icon">
-                      <img src="images/review.png" alt="Упс" />
-                    </div>
-                  </div>
-                </div>
+              <div class="item-cart__content">
+                <h4 class="item-cart__title">Cegth njdfh</h4>
+                <p class="item-cart__descr">Super opicanyasdasjkd asnkd samd asdsadasd</p>
               </div>
-            </a>
-            <a href="link">
-              <div class="item">
-                <div class="basket_item_icon">
-                  <img src="images/basket_item.png" alt="" />
-                </div>
-                <div class="information_field">
-                  <div class="item_image">
-                    <img src="images/витамин2.jpg" alt="Упс" />
-                  </div>
-                  <div class="item_name">Active Man</div>
-                  <div class="item_price">60.41 руб.</div>
-                </div>
-                <div class="views">
-                  <div class="rate">
-                    <div class="rate_icon">
-                      <img src="images/rate.png" alt="Упс" />
-                    </div>
-                    <div class="rate_count">4.8</div>
-                  </div>
-                  <div class="review">
-                    <div class="rev_count">9 отзывов</div>
-                    <div class="review_icon">
-                      <img src="images/review.png" alt="Упс" />
-                    </div>
-                  </div>
-                </div>
+              <div class="item-cart__counter">
+                <input type="number">
               </div>
-            </a>
-            <a href="link">
-              <div class="item">
-                <div class="basket_item_icon">
-                  <img src="images/basket_item.png" alt="" />
-                </div>
-                <div class="information_field">
-                  <div class="item_image">
-                    <img src="images/витамин2.jpg" alt="Упс" />
-                  </div>
-                  <div class="item_name">Витамин Д<sub>3</sub></div>
-                  <div class="item_price">22.74 руб.</div>
-                </div>
-                <div class="views">
-                  <div class="rate">
-                    <div class="rate_icon">
-                      <img src="images/rate.png" alt="Упс" />
-                    </div>
-                    <div class="rate_count">4.1</div>
-                  </div>
-                  <div class="review">
-                    <div class="rev_count">7 отзывов</div>
-                    <div class="review_icon">
-                      <img src="images/review.png" alt="Упс" />
-                    </div>
-                  </div>
-                </div>
+              <div class="item-cart__price">
+                1999
               </div>
-            </a>
-            <a href="link">
-              <div class="item">
-                <div class="basket_item_icon">
-                  <img src="images/basket_item.png" alt="" />
-                </div>
-                <div class="information_field">
-                  <div class="item_image">
-                    <img src="images/таблетки1.jpg" alt="Упс" />
-                  </div>
-                  <div class="item_name">PlaPlamela</div>
-                  <div class="item_price">29.48 руб.</div>
-                </div>
-                <div class="views">
-                  <div class="rate">
-                    <div class="rate_icon">
-                      <img src="images/rate.png" alt="Упс" />
-                    </div>
-                    <div class="rate_count">3.7</div>
-                  </div>
-                  <div class="review">
-                    <div class="rev_count">4 отзыва</div>
-                    <div class="review_icon">
-                      <img src="images/review.png" alt="Упс" />
-                    </div>
-                  </div>
-                </div>
+              <button class="item-cart__delete">
+                x
               </div>
-            </a>
-            <a href="link">
-              <div class="item">
-                <div class="basket_item_icon">
-                  <img src="images/basket_item.png" alt="" />
-                </div>
-                <div class="information_field">
-                  <div class="item_image">
-                    <img src="images/таблетки2.jpg" alt="Упс" />
-                  </div>
-                  <div class="item_name">BIOTIN&RESVERATROL</div>
-                  <div class="item_price">70.00 руб.</div>
-                </div>
-                <div class="views">
-                  <div class="rate">
-                    <div class="rate_icon">
-                      <img src="images/rate.png" alt="Упс" />
-                    </div>
-                    <div class="rate_count">5</div>
-                  </div>
-                  <div class="review">
-                    <div class="rev_count">12 отзывов</div>
-                    <div class="review_icon">
-                      <img src="images/review.png" alt="Упс" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="link">
-              <div class="item">
-                <div class="basket_item_icon">
-                  <img src="images/basket_item.png" alt="" />
-                </div>
-                <div class="information_field">
-                  <div class="item_image">
-                    <img src="images/бальзам1.jpg" alt="Упс" />
-                  </div>
-                  <div class="item_name">Бальзам болотва</div>
-                  <div class="item_price">208.43 руб.</div>
-                </div>
-                <div class="views">
-                  <div class="rate">
-                    <div class="rate_icon">
-                      <img src="images/rate.png" alt="Упс" />
-                    </div>
-                    <div class="rate_count">4</div>
-                  </div>
-                  <div class="review">
-                    <div class="rev_count">2 отзыва</div>
-                    <div class="review_icon">
-                      <img src="images/review.png" alt="Упс" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="link">
-              <div class="item">
-                <div class="basket_item_icon">
-                  <img src="images/basket_item.png" alt="" />
-                </div>
-                <div class="information_field">
-                  <div class="item_image">
-                    <img src="images/витамин1.jpg" alt="Упс" />
-                  </div>
-                  <div class="item_name">Витамины Форте</div>
-                  <div class="item_price">43.12 руб.</div>
-                </div>
-                <div class="views">
-                  <div class="rate">
-                    <div class="rate_icon">
-                      <img src="images/rate.png" alt="Упс" />
-                    </div>
-                    <div class="rate_count">3.5</div>
-                  </div>
-                  <div class="review">
-                    <div class="rev_count">21 отзыв</div>
-                    <div class="review_icon">
-                      <img src="images/review.png" alt="Упс" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="link">
-              <div class="item">
-                <div class="basket_item_icon">
-                  <img src="images/basket_item.png" alt="" />
-                </div>
-                <div class="information_field">
-                  <div class="item_image">
-                    <img src="images/витамин2.jpg" alt="Упс" />
-                  </div>
-                  <div class="item_name">Active Man</div>
-                  <div class="item_price">60.41 руб.</div>
-                </div>
-                <div class="views">
-                  <div class="rate">
-                    <div class="rate_icon">
-                      <img src="images/rate.png" alt="Упс" />
-                    </div>
-                    <div class="rate_count">4.8</div>
-                  </div>
-                  <div class="review">
-                    <div class="rev_count">9 отзывов</div>
-                    <div class="review_icon">
-                      <img src="images/review.png" alt="Упс" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
-
-          <div class="add1">
-                    <img src="images/add_wildberries.gif" alt="Реклама">
-                </div> 
-                <div class="add2">
-                    <img src="images/add_mtc.gif" alt="Реклама">
-                </div>     
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#">Previous</a>
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="https://fito.by/product-category/new/"
-                  >1</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="https://fito.by/product-category/new/"
-                  >2</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="https://fito.by/product-category/new/"
-                  >3</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="https://fito.by/product-category/new/"
-                  >Next</a
-                >
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </div>
-    <footer>подвал</footer>
   </body>
 </html>
