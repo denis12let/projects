@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Авторизация</title>
+        <title>Регистрация</title>
         <link rel="icon" href="/CourseProject/main/images/logo.png" type="image/x-icon">
         <script src="vendor/js/jquery-3.3.1.slim.min.js" defer></script>
         <script src="vendor/js/popper.min.js" async></script>
         <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
         <script src="vendor/js/bootstrap.min.js" defer></script>
-        <link rel="stylesheet" href="/CourseProject/authorization/authorization_style.css">
-        <script src="/CourseProject/authorization/script.js"></script>
+        <link rel="stylesheet" href="/CourseProject/registration/regisration_style.css">
+        <script src="/CourseProject/registration/script.js"></script>
     </head>
     <body>
         <header>
@@ -34,13 +34,13 @@
                     <img src="/CourseProject/main/images/basket.png" alt="">
                 </div>
                 <div class="basket">
-                    <a href="link" class="link_basket" style="color:black">Корзина</a>
+                    <a href="/CourseProject/basket/basket.html" class="link_basket" style="color:black">Корзина</a>
                 </div>
             </div>
         </header>
         <div class="authorization">
             <div class="name">
-                вход в аккаунт
+                Регистрация
             </div>
             <div class="login_password">
                 <div class="login">
@@ -49,14 +49,12 @@
                 <div class="password">
                     <input type="text" name="text" class="password_field" placeholder = "Пароль">
                 </div>
+                <div class="password">
+                    <input type="text" name="text" class="password_field" placeholder = "Повторите пароль">
+                </div>
             </div>
             <div class="login_button">
-                <input type="submit" name="submit" class="submit" value="Войти">
-            </div>
-            <div class="reg_button">
-                <a href="/CourseProject/registration/registration.html">
-                    <input type="submit" name="submit" class="submit" value="Регистрация">
-                </a>
+                <input type="submit" name="submit" class="submit" value="Зарегистрироваться">
             </div>
         </div>
     </body>
